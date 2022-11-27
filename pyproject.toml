@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "westfarmers-case-study"
+version = "0.1.0"
+description = ""
+authors = ["Toby Devlin <toby@tobydevlin.com>"]
+readme = "README.md"
+packages = [{include = "westfarmers_case_study"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+snowflake-connector-python = "^2.8.2"
+python-dotenv = "^0.21.0"
+pandas = "^1.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

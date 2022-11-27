@@ -1,0 +1,8 @@
+.env
+.idea
+.venv
+/iac/.terraform.lock.hcl
+/iac/out.tfplan
+/iac/terraform.tfstate
+/iac/terraform.tfstate.backup
+/iac/.terraform/

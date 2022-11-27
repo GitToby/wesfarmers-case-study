@@ -1,0 +1,3 @@
+﻿customer_id,first_name,last_name,date_of_birth,street_address,suburb,post_code,customer_created_dt
+4321,john,doe,25/11/1974,1234 main st,Melbourne,3000,16/01/2022
+5677,fred,fred,6/03/1986,5678 oak st,Perth,6000,7/05/2021
