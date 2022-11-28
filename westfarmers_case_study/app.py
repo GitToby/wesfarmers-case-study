@@ -67,8 +67,9 @@ with get_snowflake() as con:
             for col_name in sensitive_cols:
                 # create masking policy which we can alter down the line
                 mask_name = f"{col_name}_mask".upper()
+                col_type = col_types.get(col_name)
                 create_mask_sql = f"""
-                CREATE MASKING POLICY IF NOT EXISTS {mask_name} AS (val {col_types.get(col_name)}) returns {col_types.get(col_name)} ->
+                CREATE MASKING POLICY IF NOT EXISTS {mask_name} AS (val {col_type}) returns {col_type} ->
                     CASE
                       WHEN current_role() IN ('WF_loader') THEN VAL
                       ELSE NULL

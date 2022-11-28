@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "westfarmers-case-study"
 version = "0.1.0"
-description = ""
+description = "Example case study of loading data to snowflake"
 authors = ["Toby Devlin <toby@tobydevlin.com>"]
 readme = "README.md"
 packages = [{include = "westfarmers_case_study"}]
@@ -10,7 +10,6 @@ packages = [{include = "westfarmers_case_study"}]
 python = "^3.9"
 python-dotenv = "^0.21.0"
 snowflake-connector-python = {extras = ["pandas"], version = "^2.7.11"}
-
 
 [build-system]
 requires = ["poetry-core"]
